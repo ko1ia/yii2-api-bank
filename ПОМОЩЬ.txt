@@ -1,0 +1,77 @@
+Авторизация
+POST /login 
+Тело
+username - логин
+password - пароль
+Token - НЕ НУЖЕН!
+
+Выход
+POST /logout
+Тело
+username - логин
+Token - НУЖЕН!
+
+Инфа про юзера
+POST /getuser
+Тело -
+Token - НУЖЕН!
+
+Изменить пароль
+POST /editepassword
+Тело
+password - пароль
+Token - НУЖЕН!
+
+Изменить логин
+POST /editeusername
+Тело
+username - логин
+Token - НУЖЕН!
+
+Лист последних входов в систему
+GET /lastlogin
+Тело -
+Token - НУЖЕН!
+
+Список валют
+GET /valutes
+Тело -
+Token - НЕ НУЖЕН!
+
+Банкоматы
+GET /bankomats
+Тело -
+Token - НЕ НУЖЕН!
+
+Получить список карт
+GET /getcards
+Тело -
+Token - НУЖЕН!
+
+Получить список счетов
+GET /getcheck
+Тело -
+Token - НУЖЕН!
+
+Получить список кредитов
+GET /getcredits
+Тело -
+Token - НУЖЕН!
+
+Перевести деньги
+POST /pay
+Тело
+card_number_source - с какой карты снимать
+number_check - куда переводить
+sum - сумма
+Token - НУЖЕН!
+
+История операции по карте
+POST /history/card
+card_number - карта
+Token - НУЖЕН!
+
+Заблокировать/разблокировать карту
+POST /block
+card_number - карта
+Token - НУЖЕН!
